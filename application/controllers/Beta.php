@@ -18,6 +18,7 @@ class Beta extends Application {
     //-------------------------------------------------------------
 
     function index() {
+        $this->restrict(ROLE_USER, ROLE_ADMIN);
         $this->data['pagebody'] = 'beta';
         $this->render();
     }

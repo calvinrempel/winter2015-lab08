@@ -18,6 +18,7 @@ class Gamma extends Application {
     //-------------------------------------------------------------
 
     function index() {
+        $this->restrict(ROLE_ADMIN);
         $this->data['pagebody'] = 'gamma';
         $this->render();
     }
